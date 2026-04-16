@@ -1,0 +1,1 @@
+Open your C++ IDE (such as Visual Studio Code or Code::Blocks). Make sure the editor is completely empty. Copy and paste the code into the editor. Compile and run the program. Here is the link if u want https://onlinegdb.com/toRI_V86Q Also thanks for all the support for these dumb projects
