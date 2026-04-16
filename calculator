@@ -1,0 +1,118 @@
+#include <iostream>
+using namespace std; 
+void divd(){
+    int w;
+    int q;
+    cout << "What number do u want to divide(seperated by space):  ";
+   while(true){
+   if(cin.fail()){
+       cin.clear();
+       cin.ignore(1000, '\n');
+       cout << "Only numbers allowed\n";
+   } else{
+       break;
+   } }
+    cin >> w;
+    cin >>  q;
+    float result4 = w / q;
+    cout << w << " ÷ " << q << " = " << result4;
+}
+void mult(){
+    float t;
+    float m;
+    cout << "What number do you want to multiply(seperated by space): ";
+     while(true){
+   if(cin.fail()){
+       cin.clear();
+       cin.ignore(1000, '\n');
+       cout << "Only numbers allowed\n";
+   } else{
+       break;
+   } }
+    cin >> t;
+    cin >> m;
+    float result3 = t * m;
+    cout << t << " × " << m << " = " << result3;
+}
+void sub(){
+    float l;
+    float o;
+    cout << "What number do you want to subtract(seperated by space): ";
+      while(true){
+   if(cin.fail()){
+       cin.clear();
+       cin.ignore(1000, '\n');
+       cout << "Only numbers allowed\n";
+   } else{
+       break;
+   } }
+cin >> l;
+cin >> o;
+ float result2 = l - o;
+ cout << l << " - " << o << " = " << result2;
+
+}
+
+void add(){
+    float x , y;
+    cout << "What do you want to add(seperated by space): ";
+  while(true){
+   if(cin.fail()){
+       cin.clear();
+       cin.ignore(1000, '\n');
+       cout << "Only numbers allowed\n";
+   } else{
+       break;
+   } }
+    cin >> x;
+    cin >> y;
+    float result;
+    result = x + y;
+    cout << x << " + " << y << " = " << result;
+    
+}
+void client(){
+   int choice;
+   string client1[4][1]{
+   {"\nFor Addition Enter: 1\n"},
+   {"For Subtraction Enter: 2\n"},
+   {"For Multiplication Enter: 3\n"},
+   {"For Division Enter: 4\n"}
+   };
+ for(int i = 0; i < 4; ++i){
+     for(int j = 0; j < 1; ++j){
+         cout << client1[i][j];
+     }
+ }
+     cout << "\nWhat do u want to do: ";
+     while(true){
+   if(cin.fail()){
+       cin.clear();
+       cin.ignore(1000, '\n');
+       cout << "Only numbers allowed\n";
+   } else{
+       break;
+   } }
+ 
+  
+   cin >> choice;
+   if(choice < 1 || choice > 4){
+       cout << "Number not allowed: \n";
+   }
+   if(choice == 1){
+       add();
+   } else if(choice == 2){
+       sub();
+   } else if(choice == 3){
+       mult();
+       }else if(choice == 4){
+           divd();
+       } 
+   
+}
+int main()
+{
+  while(true){
+  client();
+  }
+}
